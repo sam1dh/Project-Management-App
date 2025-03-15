@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+@apply directive in Tailwind CSS allows you to apply multiple utility classes to a single CSS class.
+html class 
+<button class="my-button">Click me</button>
+In css code 
+.my-button {
+   @apply py-2 px-4 rounded-lg bg-blue-500 text-white;
+}
+*/
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  @apply text-sm ;
+  @apply bg-gray-500;
+  @apply text-gray-900
+}
